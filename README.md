@@ -25,3 +25,11 @@ Specs of a new language:
 
 A: <a int, b []int, C, d D> -> <f, g, h>
 
+Type hierarchy:
+None:
+    Cell: Str, Num (float), Ord (int), Bool, Byte
+        - Can be copied or embeded, no inheritance, as is, no error 
+    Homo: Vector, Dict {}, Set <>, List [], Tuple ()
+        - Has header with error, can be pointed to
+    Animal: Struct, Table, Class, 
+        - Can be embeded
