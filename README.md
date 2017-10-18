@@ -23,6 +23,29 @@ Specs of a new language:
 - Operator, binary and unary 
 
 
+alternative notation:
+- [](int ==> str) for dictionary
+- [](==>str) set
+- [](int) for array
+- [](interface) for list
+- (i int, s str) for tuple or (int, str)
+- [5, 6](int) matrix
+- [9](int) vector
+- [label int](col1 num, col2 str, col3 str) table
+
+exaample
+a = [](int ==> str ==> table)
+a[5] 
+a[5]['Alan']
+a[5]['Alan'][8](col1, col2) 
+for x in a[5]['Alan'][x](col1) {
+ ### do something
+}
+
+
+
+
+
 A: <a int, b []int, C, d D> -> <f, g, h>
 
 Type hierarchy:
