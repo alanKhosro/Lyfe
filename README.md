@@ -1,34 +1,46 @@
 # Zan
-Yet another language: Interpreted, Static-Typed, Math-Friendly, Functional, Weak OO, Brief, High-Level, Layered, Evolution-Based 
+Yet another language: Interpreted, Static-Typed, Math-Friendly, separation of data and functions, consine, High-Level, Layered, symbolic 
 
+Idea1: all language literals are symbols.
 
-Specs of a new language:
-- Interpreter
-- Static typed
-- Concine and brief
-- Easy to read
-- Separation of data and behavior 
-- Math like 
-    - A.f: (a int=0, s str, d {int, int}) -> (i int) {
+Idea2: It is layered to collaborate Architecture (API), Design (Interfaces), Implementation, Test. 
 
-    }
+Prime Types with their defaults (None): {
+    Number: #
+    Bit/Boolean: ?
+    Integer/Categories/Word: !
+    String: _
+    Bytes: [`]   `
+}
+Commenting: `a`
+Blockes:
+[...] for series
+{...} for functions
+(...) for struct
+"", '' for text
 
-- Language semantic
-- Symbols define
-    - [] Array: has order, no name, has duplicates, open-ended
-    - () Tuple: has order or name, closed-ended, has duplicates
-    - <> Set: no order or duplicate, open-ended 
-    - {} Closure/dictionary: open-ended, separated by;, key: value, 
-    -
+Operators:
+Math: <, >, +, -, /, *, &, |, // redical, ** power, =, - negation, @ member, subset <, << strict, >>, 
+operator: ., ,, @, :, ;
+prefix: ?, !, ~, _, #, $, %, ^, \
+postfix: ?, !, ;
+
 Language has:
-- Blocks: [...], {...}, (...), "...", '...'
+- Blocks: [...] series, {...}, (...), "...", '...'
     - which is a struct by itself and can have methods
     - subclass of error and none
 - Operators: >, <, >=, <=, ==, =, :=, :, /, ., ,, +, -, |, &,  *, ^, ->, ~, @, <>
 - prefix: ?, !, #, $, %, \
 - types: (bit), (byte), (word), (str), num, int, complex, none, zero, error
-- function
 
+
+
+- Math like 
+    - A.f: (a int=0, s str, d {int, int}) -> (i int) {
+
+    }
+
+(X): #
 {f}: (...)==>(...) function decleration
 (X): (...) struct decleration
 (X): (int) struct decleration
