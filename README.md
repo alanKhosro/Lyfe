@@ -20,6 +20,20 @@ Anything starts with an operator is an operator, anything starts with a prefix i
 
 Programmers can not use symbols (except _) for anything but operators and prefixes.
 
+Programming operators = [
+: define,
+= assign,
+:= define and assign,
+. property,
+@ member,
+, colleague]
+
+[key,value: key@[1,2,3] & value=key@dict] 
+[i,v: v=[0<i<10](a,c)@A]
+
+
+
+
 x: Int varaible decleration
 x: Int = 10 Variable decleration with default
 #x:= 10 The same
