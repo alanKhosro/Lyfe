@@ -1,50 +1,30 @@
 # Zan
-Yet another language: Interpreted, Static-Typed, Math-Friendly, separation of data and functions, consine, High-Level, Layered, symbolic 
+Yet another language: Interpreted, Static-Typed, Math-Friendly, Weak OO, multi-arguments, Consine, High-Level, Layered(flag), Evolution-Based(flag), no-pointer, symblolic, separation of data and method, inheritance by composition, ...
 
-Idea1: all language literals are symbols.
-
-Idea2: It is layered to collaborate Architecture (API), Design (Interfaces), Implementation, Test. 
-
-Prime Types with their defaults (None): {
-    Number: #
-    Bit/Boolean: ?
-    Integer/Categories/Word: !
-    String: _
-    Bytes: [`]   `
-}
-Commenting: `a`
-Blockes:
-[...] for series
-{...} for functions
-(...) for struct
-"", '' for text
-
-Operators:
-Math: <, >, +, -, /, *, &, |, // redical, ** power, =, - negation, @ member, subset <, << strict, >>, 
-operator: ., ,, @, :, ;
-prefix: ?, !, ~, _, #, $, %, ^, \
-postfix: ?, !, ;
-
+Idea1: language keywords are symbols, user instructs are english
 Language has:
-- Blocks: [...] series, {...}, (...), "...", '...'
+- Blocks: [...], {...}, (...), "...", '...'
     - which is a struct by itself and can have methods
     - subclass of error and none
 - Operators: >, <, >=, <=, ==, =, :=, :, /, ., ,, +, -, |, &,  *, ^, ->, ~, @, <>
 - prefix: ?, !, #, $, %, \
 - types: (bit), (byte), (word), (str), num, int, complex, none, zero, error
+- function
 
-
-
-- Math like 
-    - A.f: (a int=0, s str, d {int, int}) -> (i int) {
-
-    }
-
-(X): #
+x: Int varaible decleration
+(X): (a: int, b: str, c= "Alan") struct decleration
+(Y): (X, c: int, d: str) struct with inheritance
+(X): (int, str) tuple decleration == (0: int, 1: str)
 {f}: (...)==>(...) function decleration
-(X): (...) struct decleration
-(X): (int) struct decleration
 (X).{f}: (...)==>(...) method decleration
+(X): (key: str)==>(value: int) dictionary decleration
+(X): (key: str)==>(value: none) set decleration
+(X): [x: int](a: num, b: num, c: str) table deleration
+(X): [](a: num)
+(X): [10][5](a: num) marix 
+
+
+
 (X): [x: int][y: str](int) matrix decleration
 (X): (ticker: str)==>(report: str)==>[x: int](col1: str, col2: str, col3: num) Dictionary of dictionary of Table decleration
 (X): (ticker: str)==>(report: str)==>(col1: [row: int]str, col2: [row]str, col3: [row]num) dataframe decleration
@@ -110,6 +90,16 @@ a[5]['Alan'][8](col1, col2)
 [].
 
 A: <a int, b []int, C, d D> -> <f, g, h>
+
+
+
+- Language semantic
+- Symbols define
+    - [] Array: has order, no name, has duplicates, open-ended
+    - () Tuple: has order or name, closed-ended, has duplicates
+    - <> Set: no order or duplicate, open-ended 
+    - {} Closure/dictionary: open-ended, separated by;, key: value, 
+    -
 
 Type hierarchy:
 None:
