@@ -1,20 +1,40 @@
-# Zan
-Yet another language: Interpreted, Static-Typed, Math-Friendly, Weak OO, multi-arguments, Consine, High-Level, Layered(flag), Evolution-Based(flag), no-pointer, symblolic, separation of data and method, inheritance by composition, ...
+Yet another language: Interpreted, Static-Typed, Math-Friendly, multi-arguments, Consine, High-Level, Layered(flag), Evolution-Based(flag), no-pointer, symblolic, separation of data and method, inheritance by composition, ...
 
 Idea1: language keywords are symbols, user instructs are english
+
+Idea2: It is layered to collaborate Architecture (API), Design (Interfaces), Implementation, Test.
+
 Language has:
-- Blocks: [...], {...}, (...), "...", '...'
+Blockes: [...] for series {...} for functions (...) for struct "", '' for text
     - which is a struct by itself and can have methods
     - subclass of error and none
-- Operators: >, <, >=, <=, ==, =, :=, :, /, ., ,, +, -, |, &,  *, ^, ->, ~, @, <>
-- prefix: ?, !, #, $, %, \
-- types: (bit), (byte), (word), (str), num, int, complex, none, zero, error
-- function
+Operators: >, <, >=, <=, ==, =, :=, :, /, ., ,, +, -, |, &,  *, ^, ->, ~, @, 
+prefix: ?, !, ~, #, $, %, ^, \ 
+types: Bit/Boolean: ~, Integer/Categories/Word: !, String: $, Bytes: \, Number: #, Generic: ?
+Line Comment: %
+Block Comment: %" something"
+math operators: <, >, +, -, /, *, &, |, =, @ member
+operator: ., ,, @, :, ; 
+
+Anything starts with an operator is an operator, anything starts with a prefix is a prefix, and operators and prefix can not have anything else
+
+Programmers can not use symbols (except _) for anything but operators and prefixes.
 
 x: Int varaible decleration
+x: Int = 10 Variable decleration with default
+#x:= 10 The same
+x:= "Alan" Constant x
+x: (#) 
+#x Variable x is number
+
 (X): (a: int, b: str, c= "Alan") struct decleration
+(X): (#a, $s, $c:="Alan")
+
 (Y): (X, c: int, d: str) struct with inheritance
+(Y): (X, #c, $d)
+
 (X): (int, str) tuple decleration == (0: int, 1: str)
+
 {f}: (...)==>(...) function decleration
 (X).{f}: (...)==>(...) method decleration
 (X): (key: str)==>(value: int) dictionary decleration
@@ -46,8 +66,6 @@ a: [x][y]
 x= [1,2] 
 x= 10
 f= {...} function implementation
-
-
 
 
 alternative notation:
