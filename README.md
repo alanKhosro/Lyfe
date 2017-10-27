@@ -31,7 +31,14 @@ Programming operators = [
 [key,value: key@[1,2,3] & value=key@dict] 
 [i,v: v=[0<i<10](a,c)@A]
 
-
+##### Good example: How to sort nodes of a directional graph
+arrows: [node1, node2: str]
+convert arrow to stack: <node1>[node2]
+{
+z = [x: x in node1].argmin (len(value: stack<x>value))
+remove stack<z> 
+remove z: stack<*>[z in node2]
+}.while(stack is not empty)
 
 
 x: Int varaible decleration
