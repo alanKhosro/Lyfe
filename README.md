@@ -36,9 +36,10 @@ arrows: [node1, node2: str]
 convert arrow to stack: <node1>[node2]
 {
 z = [x: x in node1].argmin (len(value: stack<x>value))
+z -> answer
 remove stack<z> 
 remove z: stack<*>[z in node2]
-}.while(stack is not empty)
+}.while(stack is not empty, answer:=[str])
 
 
 x: Int varaible decleration
