@@ -149,3 +149,28 @@ None:
         - Has header with error, can be pointed to
     Animal: Struct, Table, Class, 
         - Can be embeded
+
+
+# Perfect Database
+key = (stamp int, key [n]byte, ptr *CF)
+CF = (cf str, value struct, ptr *file)
+file = map[cn](
+CN = (stamp int, cn [n]byte, *rec)
+Rec = (stamp int, value struct[cf])
+
+cn1: [{stamp, value}, ...]
+
+Filter, Map, Combine, Reduce
+
+Filter keys
+go f(key, cfs []cf):
+    load(cfs)
+    for cf in cfs
+        map(cf,f) -> each
+        combine([]each)
+    reduce (all)
+
+
+[](int, [n]byte) -> (file1, file2, ...)
+type CF is json
+CN str
